@@ -45,30 +45,27 @@ function fizzbuzz() {
     }
 
     // Put your code here...
+    function checkRule(key, number){
+        return number % rules[key] == 0
+    }
     for (var i = 1; i < (rules["maxNum"] + 1); i++){
-        var fizz = i % rules["fizz"] == 0
-        var buzz = i % rules["buzz"] == 0
-        var bang = i % rules["bang"] == 0
-        var bong = i % rules["bong"] == 0
-        var fezz = i % rules["fezz"] == 0
-        var reverse = i % rules["reverse"] == 0
         var out = []
 
-        if (fizz){
+        if (checkRule("fizz", i)){
             out.push("Fizz")
         }
-        if (buzz){
+        if (checkRule("buzz", i)){
             out.push("Buzz")
         }
-        if (bang) {
+        if (checkRule("bang", i)) {
             out.push("Bang")
         }
-        if (bong){
+        if (checkRule("bong", i)){
             // bong overrides everything else
             // so don't push here
             out = ["Bong"]
         }
-        if (fezz){
+        if (checkRule("fezz", i)){
             for (var j = 0; j < out.length; j++){
                 if (out[j].indexOf("B") === 0){
                     out.splice(j, 0, "Fezz")
@@ -80,7 +77,7 @@ function fizzbuzz() {
             }
         }
 
-        if (reverse){
+        if (checkRule("reverse", i)){
             out.reverse()
         }
 
