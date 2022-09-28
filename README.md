@@ -30,6 +30,7 @@ Fizz
 FizzBuzz
 Fizz
 FizzBuzz
+Fizz
 ```
 Chaining command line rules:
 ```bash
@@ -39,6 +40,7 @@ Welcome to FizzBuzz!
 FizzBuzz
 3
 FizzBuzz
+5
 ```
 
 1. Fork this repo

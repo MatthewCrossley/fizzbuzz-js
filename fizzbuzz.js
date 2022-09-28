@@ -45,7 +45,7 @@ function fizzbuzz() {
     }
 
     // Put your code here...
-    for (var i = 1; i < rules["maxNum"]; i++){
+    for (var i = 1; i < (rules["maxNum"] + 1); i++){
         var fizz = i % rules["fizz"] == 0
         var buzz = i % rules["buzz"] == 0
         var bang = i % rules["bang"] == 0
