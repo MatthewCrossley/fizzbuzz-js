@@ -1,5 +1,36 @@
 # FizzBuzz
 
+### Usage
+```bash
+$ node fizzbuzz.js
+Welcome to FizzBuzz!
+Max number to print up to: [user input 5]
+1
+2
+Fizz
+4
+Buzz
+$ node fizzbuzz.js maxNum=5
+Welcome to FizzBuzz!
+1
+2
+Fizz
+4
+Buzz
+$ node fizzbuzz.js maxNum=5 fizz=1 buzz=2
+Welcome to FizzBuzz!
+Fizz
+FizzBuzz
+Fizz
+FizzBuzz
+$ node fizzbuzz.js maxNum=5 fizz=buzz=2
+Welcome to FizzBuzz!
+1
+FizzBuzz
+3
+FizzBuzz
+```
+
 1. Fork this repo
     * Go to this repo's GitHub page (https://github.com/CorndelWithSoftwire/fizzbuzz-js)
     * Click `Fork` in the top-right of the page - this will create a copy of this repo in **your own GitHub account**
