@@ -1,12 +1,15 @@
-
+const prompt = require("prompt-sync")();
 
 // Here, we create our main function.
 function fizzbuzz() {
     
     console.log('Welcome to FizzBuzz!');
 
+    const input = prompt("Max number to print up to: ")
+    var maxNum = Number(input)
+
     // Put your code here...
-    for (var i = 1; i < 201; i++){
+    for (var i = 1; i < maxNum; i++){
         var fizz = i % 3 == 0
         var buzz = i % 5 == 0
         var bang = i % 7 == 0
