@@ -1,6 +1,7 @@
 # FizzBuzz
 
 ### Usage
+Normal:
 ```bash
 $ node fizzbuzz.js
 Welcome to FizzBuzz!
@@ -10,6 +11,9 @@ Max number to print up to: [user input 5]
 Fizz
 4
 Buzz
+```
+Skipping the user prompt:
+```bash
 $ node fizzbuzz.js maxNum=5
 Welcome to FizzBuzz!
 1
@@ -17,12 +21,18 @@ Welcome to FizzBuzz!
 Fizz
 4
 Buzz
+```
+Changing the fizz/buzz divisors:
+```bash
 $ node fizzbuzz.js maxNum=5 fizz=1 buzz=2
 Welcome to FizzBuzz!
 Fizz
 FizzBuzz
 Fizz
 FizzBuzz
+```
+Chaining command line rules:
+```bash
 $ node fizzbuzz.js maxNum=5 fizz=buzz=2
 Welcome to FizzBuzz!
 1
