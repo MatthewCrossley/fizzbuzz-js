@@ -43,6 +43,9 @@ FizzBuzz
 5
 ```
 
+
+### Repo Usage
+
 1. Fork this repo
     * Go to this repo's GitHub page (https://github.com/CorndelWithSoftwire/fizzbuzz-js)
     * Click `Fork` in the top-right of the page - this will create a copy of this repo in **your own GitHub account**
