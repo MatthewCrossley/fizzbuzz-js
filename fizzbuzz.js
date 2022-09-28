@@ -1,11 +1,24 @@
 const prompt = require("prompt-sync")();
 
 function parseArg(arg, rules){
-    for (key in rules){
-        if (arg.indexOf(`${key}=`) === 0){
-            rules[key] = Number(arg.replace(`${key}=`, ""))
-            return
+    segments = arg.split("=")
+    var value = -1
+    var keys = []
+
+    for (seg of segments){
+        if (seg in rules){
+            keys.push(seg)
+        } else if (!isNaN(parseInt(seg))){
+            value = parseInt(seg)
         }
+    }
+
+    if (value === -1){
+        return
+    }
+
+    for (key of keys){
+        rules[key] = value
     }
 }
 
