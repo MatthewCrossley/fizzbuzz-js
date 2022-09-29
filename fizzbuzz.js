@@ -13,10 +13,6 @@ function parseArg(arg, rules){
         }
     }
 
-    if (value === -1){
-        return
-    }
-
     for (key of keys){
         rules[key] = value
     }
@@ -46,6 +42,9 @@ function fizzbuzz() {
 
     // Put your code here...
     function checkRule(key, number){
+        if (rules[key] === -1){
+            return false
+        }
         return number % rules[key] == 0
     }
     for (var i = 1; i < (rules["maxNum"] + 1); i++){

@@ -42,6 +42,15 @@ FizzBuzz
 FizzBuzz
 5
 ```
+Excluding a rule:
+```bash
+$ node fizzbuzz.js fizz=-1
+1
+2
+3
+4
+Buzz
+```
 
 
 ### Repo Usage
